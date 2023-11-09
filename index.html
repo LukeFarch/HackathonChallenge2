@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="-96gk8.knwjgfxjfuu.htr">
+    <title>Cipher Challenge!</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FF3333;
+            font-family: "Courier New", monospace;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 1px solid #FF3333;
+            padding-bottom: 10px;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stacking children vertically */
+            gap: 10px; /* Providing a gap between children */
+        }
+
+        #terminal {
+            background-color: #333;
+            border-radius: 5px;
+            max-width: 500px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;  /* Centering the terminal box */
+        }
+
+        #terminal-content {
+            content: "root@kali:~$ ";
+        }
+
+        input, button {
+            border: none;
+            color: #FF3333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        input {
+            background-color: #333;
+            flex-grow: 1;
+            margin-left: 5px;
+        }
+
+        button {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #D0D0D0;
+        }
+    </style>
+    <script>
+        function checkAnswer() {
+            const userInput = document.getElementById("answerInput").value;
+            const correctAnswer = "hackathonchallenge1.firebaseapp.com";
+
+            if (userInput === correctAnswer) {
+                alert('Correct! Now, inspect the source for the next clue.');
+            } else {
+                alert('Try again.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>MSU & DU Hackathon 2023</h1>
+
+    <div class="input-container">
+        <p>Enter your solution to the first cipher:</p>
+        <div id="terminal">
+            <span id="terminal-content">root@kali:~$</span>
+            <input type="text" id="answerInput" placeholder="Enter solution">
+        </div>
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <!-- Hint for the next two ciphers (Hidden in the source code) -->
+    <!-- Hint 1: Caesar Shifted 5 Times before he was encoded-->
+    <!-- Hint 2: Sometimes I lay awake wondering if base encoding is real-->
+    <!-- Hint 3: Sometimes you need just need to push to production and go home for the weekend.-->
+    <!-- Unrelated: For a better experience use Windows!! Windows army, aGFja2F0aG9uY2hhbGxlbmdl is the name of a process in Windows, ew. -->
+
+    
+<pre>
+
+     ____________  __ _________    _______        ____                    __  _________  __
+    / ___/  _/ _ \/ // / __/ _ \  / ___/ /  ___ _/ / /__ ___  ___ ____   /  |/  / __/ / / /
+   / /___/ // ___/ _  / _// , _/ / /__/ _ \/ _ `/ / / -_) _ \/ _ `/ -_) / /|_/ /\ \/ /_/ / 
+   \___/___/_/  /_//_/___/_/|_|  \___/_//_/\_,_/_/_/\__/_//_/\_, /\__/ /_/  /_/___/\____/  
+                                                            /___/                          
+    Made with love, Luke. 
+</pre>
+
+</body>
+
+</html>
+
